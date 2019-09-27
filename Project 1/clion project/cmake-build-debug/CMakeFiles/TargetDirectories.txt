@@ -1,3 +1,0 @@
-/home/achariso/Desktop/Embedded Systems/Projects/1/project1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/achariso/Desktop/Embedded Systems/Projects/1/project1/cmake-build-debug/CMakeFiles/project1.dir
-/home/achariso/Desktop/Embedded Systems/Projects/1/project1/cmake-build-debug/CMakeFiles/edit_cache.dir
