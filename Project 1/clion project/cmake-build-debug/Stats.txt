@@ -1,0 +1,18 @@
+--- New Sampling ( 71856/72000 samples - 0.1000 secs period - using clock_gettime() ) ---
+min:       0.1000425860 
+max:       0.1007072260 
+mean:      0.1001986683 
+median:    0.1002183280 
+deviation: 0.0000424851 
+--- New Sampling ( 71852/72000 samples - 0.1000 secs period - using gettimeofday() ) ---
+min:       0.1000199318 
+max:       0.1016070843 
+mean:      0.1002039824 
+median:    0.1002199650 
+deviation: 0.0000382866
+--- New Sampling ( 35997/36000 samples - 0.0999 secs period - using clock_gettime() + linear prediction ) ---
+min:       0.0999210440 
+max:       0.1025615690 
+mean:      0.1000039452 
+median:    0.1000054280 
+deviation: 0.0000253807 
