@@ -1,0 +1,1 @@
+/usr/bin/cc  -lm -pthread -g   CMakeFiles/project1.dir/main.c.o CMakeFiles/project1.dir/sampling_gettimeofday.c.o CMakeFiles/project1.dir/stats.c.o CMakeFiles/project1.dir/sample_predictive.c.o CMakeFiles/project1.dir/linearregression.c.o  -o project1 -lm 
