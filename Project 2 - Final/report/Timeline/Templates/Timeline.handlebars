@@ -1,0 +1,11 @@
+<div class="timeline">
+  <div class="timeline-month">
+    Start: <b>{{start}}</b>
+    <span>Duration: <b>{{duration}} secs</b></span>
+  </div>
+
+  {{#each events}}
+      {{> Event}}
+  {{/each}}
+
+</div>

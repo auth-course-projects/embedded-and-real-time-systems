@@ -1,0 +1,11 @@
+<div data-template="event" data-index="{{@index}}" class="timeline-section">
+  <div class="timeline-date">
+    <i class="fa fa-clock-o"></i>&nbsp; {{occured_at}}
+    <span>type: <b>{{type}}</b></span>
+  </div>
+  <div class="row">
+    {{#each messages}}
+        {{> Message}}
+    {{/each}}
+  </div>
+</div>

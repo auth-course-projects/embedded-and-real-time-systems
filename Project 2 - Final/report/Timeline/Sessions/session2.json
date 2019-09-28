@@ -1,0 +1,85 @@
+{
+  "start": "Sun, 29 Sep 2019 @22:03:19",
+  "requested_duration": "{duration}",
+
+  "events": [
+    {
+      "occured_at": "12:03:22",
+      "type": "datetime",
+
+      "server": "9026",
+      "client": "8600",
+
+      "messages": [
+        {
+          "saved_at" : "{timestamp}",
+          "action": "datetime",
+
+          "previous_now": "{timestamp}",
+          "new_now": "{timestamp}",
+
+          "sender": "XXXX",
+          "recipient": "XXXX",
+          "created_at": "Sat, 28 Sep 2019 @ 12:03:19",
+          "body": "UG4HT2@Y6(S$%/\\$;ZCF+<17.>\"F8+M-R\"VF46@J>3OCCKG^F+DQGV)V4+<M6*Z(,PN@'.+EBZ)%EP#+[H]C>&9R1U?G:O+*=L1LWW.Q 36P6BL^?/<EH/V=N==(,H3I4D5+;C\\;V3,-UX+4'HYOWO,E,IN82!!FE7R!ZN<Q!H^V@)*GQ#6HRC.^,\\6>]8%BOWCIE :GH8=)BHP3K'\\>J*<V&S5#+:EZ1)CV)^=Q6[ZXCK,.R(L<2)28\\G;'! !",
+          "transmitted": false,
+          "transmitted_devices": "9026, 8600, 8072"
+        }
+      ],
+
+      "duration": "200.89us"
+    },
+    {
+      "occured_at": "12:03:22",
+      "type": "connection",
+
+      "server": "9026",
+      "client": "8600",
+
+      "messages": [
+        {
+          "saved_at" : "{timestamp}",
+          "action": "received",
+
+          "sender": "XXXX",
+          "recipient": "XXXX",
+          "created_at": "Sat, 28 Sep 2019 @ 12:03:19",
+          "body": "UG4HT2@Y6(S$%/\\$;ZCF+<17.>\"F8+M-R\"VF46@J>3OCCKG^F+DQGV)V4+<M6*Z(,PN@'.+EBZ)%EP#+[H]C>&9R1U?G:O+*=L1LWW.Q 36P6BL^?/<EH/V=N==(,H3I4D5+;C\\;V3,-UX+4'HYOWO,E,IN82!!FE7R!ZN<Q!H^V@)*GQ#6HRC.^,\\6>]8%BOWCIE :GH8=)BHP3K'\\>J*<V&S5#+:EZ1)CV)^=Q6[ZXCK,.R(L<2)28\\G;'! !",
+          "transmitted": false,
+          "transmitted_devices": "9026, 8600, 8072"
+        },
+        {
+          "saved_at" : "{timestamp}",
+          "action": "transmitted",
+
+          "sender": "YYYY",
+          "recipient": "XXXX",
+          "created_at": "Sat, 28 Sep 2019 @ 12:03:19",
+          "body": "UG4HT2@Y6(S$%/\\$;ZCF+<17.>\"F8+M-R\"VF46@J>3OCCKG^F+DQGV)V4+<M6*Z(,PN@'.+EBZ)%EP#+[H]C>&9R1U?G:O+*=L1LWW.Q 36P6BL^?/<EH/V=N==(,H3I4D5+;C\\;V3,-UX+4'HYOWO,E,IN82!!FE7R!ZN<Q!H^V@)*GQ#6HRC.^,\\6>]8%BOWCIE :GH8=)BHP3K'\\>J*<V&S5#+:EZ1)CV)^=Q6[ZXCK,.R(L<2)28\\G;'! !",
+          "transmitted": false,
+          "transmitted_devices": "9026, 8600, 8072"
+        }
+      ],
+
+      "duration": "200.89us"
+    },
+    {
+      "occured_at": "12:04:17",
+      "type": "production",
+      "messages": [
+        {
+          "saved_at" : "{timestamp}",
+          "action": "produced",
+
+          "sender": "XXXX",
+          "recipient": "XXXX",
+          "created_at": "Sat, 28 Sep 2019 @ 12:03:19",
+          "body": "UG4HT2@Y6(S$%/\\$;ZCF+<17.>\"F8+M-R\"VF46@J>3OCCKG^F+DQGV)V4+<M6*Z(,PN@'.+EBZ)%EP#+[H]C>&9R1U?G:O+*=L1LWW.Q 36P6BL^?/<EH/V=N==(,H3I4D5+;C\\;V3,-UX+4'HYOWO,E,IN82!!FE7R!ZN<Q!H^V@)*GQ#6HRC.^,\\6>]8%BOWCIE :GH8=)BHP3K'\\>J*<V&S5#+:EZ1)CV)^=Q6[ZXCK,.R(L<2)28\\G;'! !"
+        }
+      ]
+    }
+  ],
+
+  "duration": "7200.689",
+  "end": "{timestamp}"
+}
