@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
     <title>Select Session</title>
-
     <!-- Bootstrap v3.7 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css">
-
     <!-- Font-Awesome Font v4.7 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i&display=swap&subset=greek" rel="stylesheet">
+
+    <style media="screen">
+      body, .body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: 'Roboto Mono', monospace;
+      }
+    </style>
   </head>
   <body>
 
@@ -19,23 +25,12 @@
         <table class="table">
           <thead>
             <tr>
-              <th>&nbsp;</th>
-              <th>Date</th>
-              <th>Timeline</th>
+              <th width="20%">&nbsp;</th>
+              <th width="40%">Date</th>
+              <th width="40%">Timeline</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th>Session 1</th>
-              <td><i>24/09/2019 @18:30:05</i></td>
-              <td><a href="session.html?session=1">Link &nbsp;<i class="fa fa-chevron-right"></i></a></td>
-            </tr>
-            <tr>
-              <th>Session 2</th>
-              <td><i>26/09/2019 @08:30:05</i></td>
-              <td><a href="session.html?session=2">Link &nbsp;<i class="fa fa-chevron-right"></i></a></td>
-            </tr>
-          </tbody>
+          <tbody id="tbody"></tbody>
         </table>
 
       </div>
@@ -43,19 +38,34 @@
 
     <script type="text/javascript">
 
-      let sessionIndex = 1;
+      const tbodyElement = document.getElementById( 'tbody' );
       const maxNumberOfSessions = 100;
+      const xhr = new XMLHttpRequest();
 
+      let sessionIndex = 1;
       do {
 
-        let fetchUrl = `./Sessions/session${sessionIndex}.json`;
+        xhr.open( 'GET', `./Sessions/session${sessionIndex}.json`, false );
+        xhr.send( null );
 
-        fetch( fetchUrl )
-          .then( response => response.json())
-          .then( json => { console.log( json ) })
-          .catch( error => { sessionIndex = maxNumberOfSessions } );
+        // Check if session with $sessionIndex exists
+        if ( xhr.status !== 200 ) {
+          break;
+        }
 
-      } while( sessionIndex < maxNumberOfSessions );
+        // Get json data
+        let session = JSON.parse( xhr.responseText );
+
+        // Append element to table
+        let tr = document.createElement( 'tr' );
+        tr.innerHTML = `
+          <th>Session ${sessionIndex}</th>
+          <td><i>${session.start}</i></td>
+          <td><a href="session.html?session=${sessionIndex}">Link &nbsp;<i class="fa fa-chevron-right"></i></a></td>
+        `;
+        tbodyElement.appendChild( tr );
+
+      } while( ++sessionIndex < maxNumberOfSessions );
 
     </script>
 

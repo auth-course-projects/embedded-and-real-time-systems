@@ -22,6 +22,9 @@ const findGetParameter = function( parameterName ) {
 }
 const sessionIndex = findGetParameter( 'session' );
 
+// Display Session Index
+$( document ).ready( () => $( '.sessionIndex' ).text( sessionIndex ) );
+
 // Define paths
 const app_paths = {
   json: `./Sessions/session${sessionIndex}.json`,
@@ -92,7 +95,7 @@ const renderSession = function()
   // Handlebars helper to trim message body
   Handlebars.registerHelper( 'trim_body', function( options ) {
     let body = options.fn( this );
-    let maxLength = 43;
+    let maxLength = 35;
 
     return body.length > maxLength ?
       body.substr( 0, maxLength - 4 ) + ' [&hellip;]':
