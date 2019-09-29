@@ -32,10 +32,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a9196', end
   margin-bottom:30px;
 }
 
-.timeline-date span{
+.timeline-date span:last-child {
+  left: calc(100% - 10px);
+}
+
+.timeline-date span {
   position:absolute;
   top:-1px;
-  left:calc(100% - 10px);
   z-index:-1;
   white-space:nowrap;
   display:inline-block;
@@ -173,4 +176,16 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.3);
 
 .close {
   color: white;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.timeline-date span.fix {
+  left: 245px !important;
+  padding-left: 40px;
+  border: 1px solid #0e0e0e;
+  background-color: #191919;
+  color: #afafaf;
 }

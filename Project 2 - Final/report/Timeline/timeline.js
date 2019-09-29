@@ -102,6 +102,57 @@ const renderSession = function()
       body;
   });
 
+  // Handlebars helper to augment {{#if}} helper
+  Handlebars.registerHelper({
+    eq: function (v1, v2) {
+        return v1 === v2;
+    },
+    ne: function (v1, v2) {
+        return v1 !== v2;
+    },
+    lt: function (v1, v2) {
+        return v1 < v2;
+    },
+    gt: function (v1, v2) {
+        return v1 > v2;
+    },
+    lte: function (v1, v2) {
+        return v1 <= v2;
+    },
+    gte: function (v1, v2) {
+        return v1 >= v2;
+    },
+    and: function () {
+        return Array.prototype.slice.call(arguments).every(Boolean);
+    },
+    or: function () {
+        return Array.prototype.slice.call(arguments, 0, -1).some(Boolean);
+    }
+  });
+
+  // Handlebars helper to output correct message icon
+  Handlebars.registerHelper( 'class_icon', function( options ) {
+    let action = options.fn( this );
+    let icon;
+
+    switch (action) {
+      case 'datetime':
+        icon = 'fa-refresh';
+        break;
+      case 'produced':
+        icon = 'fa-asterisk text-success';
+        break;
+      case 'transmitted':
+        icon = 'fa-long-arrow-right text-danger';
+        break;
+      default:
+        icon = 'fa-long-arrow-left text-blue';
+        break;
+    }
+
+    return icon;
+  });
+
   // Render all events inside app.session
   const renderElement = document.getElementById('renderSession');
   renderElement.innerHTML = app.templates.Timeline( app.session );
@@ -231,7 +282,6 @@ function getProductionMessageFormInputs( message ) {
     </div>
   `;
 }
-
 
 
 

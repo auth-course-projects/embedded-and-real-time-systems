@@ -1,14 +1,26 @@
 <div data-template="message" data-index="{{@index}}" class="col-sm-4">
   <div class="timeline-box">
-    <div class="box-title">
-      <i class="fa fa-asterisk text-success" aria-hidden="true"></i> Message Received
+    <div class="box-title text-capitalize">
+      <i class="fa {{#class_icon}}{{action}}{{/class_icon}}" aria-hidden="true"></i>
+      {{#if (eq action 'datetime')}}
+      Datetime Syncing
+      {{else}}
+      Message {{action}}
+      {{/if}}
     </div>
     <div class="box-content">
       <a class="btn btn-xs btn-default pull-right" onclick="renderMessageDetails(this)">Details</a>
-      <div class="box-item"><strong>Sender</strong>: {{sender}}</div>
-      <div class="box-item"><strong>Recipient</strong>: {{recipient}}</div>
-      <div class="box-item"><strong>Created Date</strong>: {{created_at}}</div>
-      <div class="box-item"><strong>Body</strong>:  {{#trim_body}}{{body}}{{/trim_body}}</div>
+
+      {{#if (ne action 'datetime')}}
+        <div class="box-item"><strong>Sender</strong>: {{sender}}</div>
+        <div class="box-item"><strong>Recipient</strong>: {{recipient}}</div>
+        <div class="box-item"><strong>Created Date</strong>: {{created_at}}</div>
+        <div class="box-item"><strong>Body</strong>:  {{#trim_body}}{{body}}{{/trim_body}}</div>
+      {{else}}
+        <div class="box-item"><strong>Previous NOW()</strong>: {{previous_now}}</div>
+        <div class="box-item"><strong>New NOW()</strong>: {{new_now}}</div>
+      {{/if}}
+
     </div>
     <div class="box-footer"></div>
   </div>
