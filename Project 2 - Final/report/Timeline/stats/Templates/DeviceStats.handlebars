@@ -1,0 +1,27 @@
+{{#each devices}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Device: <b>{{#pad_zeros}}{{aem}}{{/pad_zeros}}</b></h3>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th width="15%">Connection</th>
+          <th width="25%">Start</th>
+          <th width="25%">End</th>
+          <th width="35%">Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each connections}}
+        <tr>
+          <th>{{@index}}</th>
+          <td>{{start}}</td>
+          <td>{{end}}</td>
+          <td>{{duration}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+{{/each}}

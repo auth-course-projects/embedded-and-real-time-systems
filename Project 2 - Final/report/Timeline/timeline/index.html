@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/ico" href="../favicon.ico"/>
+    <title>Interactivity Timeline | Report | Project 2 - Final | HY3604</title>
+    <!-- jQuery -->
+    <script src="../vendor/jquery/3.4.1/jquery.slim.min.js"></script>
+    <!-- Bootstrap v3.7 -->
+    <link rel="stylesheet" href="../vendor/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="../vendor/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Font-Awesome Font v4.7 -->
+    <link rel="stylesheet" href="../vendor/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i&display=swap&subset=greek" rel="stylesheet">
+    <!-- Bootbox -->
+    <script src="../vendor/bootbox.js/5.3.2/bootbox.min.js"></script>
+    <!-- Handlebars -->
+    <script src="../vendor/handlebars/4.3.1/handlebars.js"></script>
+    <!-- Timeline stylesheet & scripts -->
+    <link rel="stylesheet" href="timeline.css">
+    <script src="timeline.js"></script>
+    <style media="screen">
+      body, .body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: 'Roboto Mono', monospace;
+      }
+      .text-capitalize {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body style="overflow-x:hidden">
+    <div class="row">
+      <h2 class="text-center">Timeline for Session #<span class="sessionIndex"></span></h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background:none;border:none;text-align:center">
+          <li class="breadcrumb-item"><a href="../">Index</a></li>
+          <li class="breadcrumb-item"><a href="../index.html#timelines">Timelines</a></li>
+          <li class="breadcrumb-item active" aria-current="page">#<span class="sessionIndex"></li>
+        </ol>
+      </nav>
+    </div>
+    <div id="renderSession" class="container"></div>
+  </body>
+</html>

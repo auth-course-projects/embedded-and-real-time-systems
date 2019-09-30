@@ -1,1 +1,404 @@
-{"start": "2019-09-30T11:46:14Z", "requested_duration":"10 secs", "events": [{"occured_at": "11:46:14", "type": "production", "server": "0", "client": "0", "messages": [{"saved_at": "2019-09-30T11:46:14Z", "action": "produced", "sender": "1", "recipient": "8001", "created_at": "2019-09-30T11:46:14Z", "body": "Z1)AT&Q6:L83E'ME^&CZ0459]H0]$.->3/9N[Q!AXN&WTIQ$^&=[ON]QKNY/,[C;417%2X^ ^UTHFXFM6A<$>-O@[HP'C3CXDZ]VR[VPPJ87B^$X?@^MK>I3.PWA3O%-L[HQP8;(O^'SVF3SD!>#JR1:ISN8X[$T[LEK%!STZHUA[H%'(FY:!B-OZ%J^YEK?0P@$D?^,4?(]E$$MK]'L?4;9:%73KR[R27Q^C&=K#P'P;$W'C,BFG3Y26L.(^-?", "transmitted": "FALSE", "transmitted_devices": ""}], "duration": "0.347000 ms"},{"occured_at": "11:46:14", "type": "connection", "server": "1", "client": "8600", "messages": [{"saved_at": "2019-09-30T11:46:14Z", "action": "transmitted", "sender": "1", "recipient": "8001", "created_at": "2019-09-30T11:46:14Z", "body": "Z1)AT&Q6:L83E'ME^&CZ0459]H0]$.->3/9N[Q!AXN&WTIQ$^&=[ON]QKNY/,[C;417%2X^ ^UTHFXFM6A<$>-O@[HP'C3CXDZ]VR[VPPJ87B^$X?@^MK>I3.PWA3O%-L[HQP8;(O^'SVF3SD!>#JR1:ISN8X[$T[LEK%!STZHUA[H%'(FY:!B-OZ%J^YEK?0P@$D?^,4?(]E$$MK]'L?4;9:%73KR[R27Q^C&=K#P'P;$W'C,BFG3Y26L.(^-?", "transmitted": "TRUE", "transmitted_devices": "8600"},{"saved_at": "2019-09-30T11:46:14Z", "action": "received", "sender": "8600", "recipient": "8001", "created_at": "2019-09-30T11:46:14Z", "body": "Z1)AT&Q6:L83E'ME^&CZ0459]H0]$.->3/9N[Q!AXN&WTIQ$^&=[ON]QKNY/,[C;417%2X^ ^UTHFXFM6A<$>-O@[HP'C3CXDZ]VR[VPPJ87B^$X?@^MK>I3.PWA3O%-L[HQP8;(O^'SVF3SD!>#JR1:ISN8X[$T[LEK%!STZHUA[H%'(FY:!B-OZ%J^YEK?0P@$D?^,4?(]E$$MK]'L?4;9:%73KR[R27Q^C&=K#P'P;$W'C,BFG3Y26L.(^-?", "transmitted": "FALSE", "transmitted_devices": "8600"}], "duration": "15.400000 ms"},{"occured_at": "11:46:15", "type": "connection", "server": "1", "client": "9026", "messages": [{"saved_at": "2019-09-30T11:46:15Z", "action": "transmitted", "sender": "1", "recipient": "8001", "created_at": "2019-09-30T11:46:14Z", "body": "Z1)AT&Q6:L83E'ME^&CZ0459]H0]$.->3/9N[Q!AXN&WTIQ$^&=[ON]QKNY/,[C;417%2X^ ^UTHFXFM6A<$>-O@[HP'C3CXDZ]VR[VPPJ87B^$X?@^MK>I3.PWA3O%-L[HQP8;(O^'SVF3SD!>#JR1:ISN8X[$T[LEK%!STZHUA[H%'(FY:!B-OZ%J^YEK?0P@$D?^,4?(]E$$MK]'L?4;9:%73KR[R27Q^C&=K#P'P;$W'C,BFG3Y26L.(^-?", "transmitted": "TRUE", "transmitted_devices": "8600,9026"},{"saved_at": "2019-09-30T11:46:15Z", "action": "transmitted", "sender": "8600", "recipient": "8001", "created_at": "2019-09-30T11:46:14Z", "body": "Z1)AT&Q6:L83E'ME^&CZ0459]H0]$.->3/9N[Q!AXN&WTIQ$^&=[ON]QKNY/,[C;417%2X^ ^UTHFXFM6A<$>-O@[HP'C3CXDZ]VR[VPPJ87B^$X?@^MK>I3.PWA3O%-L[HQP8;(O^'SVF3SD!>#JR1:ISN8X[$T[LEK%!STZHUA[H%'(FY:!B-OZ%J^YEK?0P@$D?^,4?(]E$$MK]'L?4;9:%73KR[R27Q^C&=K#P'P;$W'C,BFG3Y26L.(^-?", "transmitted": "TRUE", "transmitted_devices": "8600,9026"},{"saved_at": "2019-09-30T11:46:15Z", "action": "received", "sender": "9026", "recipient": "8001", "created_at": "2019-09-30T11:46:14Z", "body": "Z1)AT&Q6:L83E'ME^&CZ0459]H0]$.->3/9N[Q!AXN&WTIQ$^&=[ON]QKNY/,[C;417%2X^ ^UTHFXFM6A<$>-O@[HP'C3CXDZ]VR[VPPJ87B^$X?@^MK>I3.PWA3O%-L[HQP8;(O^'SVF3SD!>#JR1:ISN8X[$T[LEK%!STZHUA[H%'(FY:!B-OZ%J^YEK?0P@$D?^,4?(]E$$MK]'L?4;9:%73KR[R27Q^C&=K#P'P;$W'C,BFG3Y26L.(^-?", "transmitted": "FALSE", "transmitted_devices": "9026"}], "duration": "23.926000 ms"}], "duration": "10.001109 s", "end": "2019-09-30T11:46:24Z"}
+{
+	"start": "2019-09-30T13:57:46Z",
+	"client_aem": "1",
+	"requested_duration": "300 secs",
+	"events": [{
+		"occured_at": "13:57:46",
+		"type": "production",
+		"server": "0",
+		"client": "0",
+		"messages": [{
+			"saved_at": "2019-09-30T13:57:46Z",
+			"action": "produced",
+			"sender": "1",
+			"recipient": "8032",
+			"created_at": "2019-09-30T13:57:46Z",
+			"body": "P'+YSO2T)-;%DUC970[CT4]M5]CS'XC.#=ROV[1!@&DY>TT!H)^5>[X:N22-6O/(>%$:6%[=IT[=I%RZ:0U2KC1]U>3DN<S@=*E8G.,BKU>PG8*X-<CPM@F+T*Y0-MPJW5>C. .$>^KV(C#D&S1G9<;D6KQ#;;ZP=83K8AOV?;LG^O+%B<LX'@.R11-L+])C0T[QDQ0=W],O>NK6U+EG<VT(Q1E!%ARI2HPYF[HK976P,A5T]+H%-:6S;<4.%F0",
+			"transmitted": "FALSE",
+			"transmitted_devices": ""
+		}],
+		"duration": "0.050000 ms"
+	}, {
+		"occured_at": "13:57:46",
+		"type": "connection",
+		"server": "1",
+		"client": "9026",
+		"messages": [{
+			"saved_at": "2019-09-30T13:57:46Z",
+			"action": "transmitted",
+			"sender": "1",
+			"recipient": "8032",
+			"created_at": "2019-09-30T13:57:46Z",
+			"body": "P'+YSO2T)-;%DUC970[CT4]M5]CS'XC.#=ROV[1!@&DY>TT!H)^5>[X:N22-6O/(>%$:6%[=IT[=I%RZ:0U2KC1]U>3DN<S@=*E8G.,BKU>PG8*X-<CPM@F+T*Y0-MPJW5>C. .$>^KV(C#D&S1G9<;D6KQ#;;ZP=83K8AOV?;LG^O+%B<LX'@.R11-L+])C0T[QDQ0=W],O>NK6U+EG<VT(Q1E!%ARI2HPYF[HK976P,A5T]+H%-:6S;<4.%F0",
+			"transmitted": "TRUE",
+			"transmitted_devices": "9026"
+		}, {
+			"saved_at": "2019-09-30T13:57:46Z",
+			"action": "received",
+			"sender": "9026",
+			"recipient": "8032",
+			"created_at": "2019-09-30T13:57:46Z",
+			"body": "P'+YSO2T)-;%DUC970[CT4]M5]CS'XC.#=ROV[1!@&DY>TT!H)^5>[X:N22-6O/(>%$:6%[=IT[=I%RZ:0U2KC1]U>3DN<S@=*E8G.,BKU>PG8*X-<CPM@F+T*Y0-MPJW5>C. .$>^KV(C#D&S1G9<;D6KQ#;;ZP=83K8AOV?;LG^O+%B<LX'@.R11-L+])C0T[QDQ0=W],O>NK6U+EG<VT(Q1E!%ARI2HPYF[HK976P,A5T]+H%-:6S;<4.%F0",
+			"transmitted": "FALSE",
+			"transmitted_devices": "9026"
+		}],
+		"duration": "23.466000 ms"
+	}, {
+		"occured_at": "13:57:47",
+		"type": "connection",
+		"server": "1",
+		"client": "8600",
+		"messages": [{
+			"saved_at": "2019-09-30T13:57:47Z",
+			"action": "transmitted",
+			"sender": "1",
+			"recipient": "8032",
+			"created_at": "2019-09-30T13:57:46Z",
+			"body": "P'+YSO2T)-;%DUC970[CT4]M5]CS'XC.#=ROV[1!@&DY>TT!H)^5>[X:N22-6O/(>%$:6%[=IT[=I%RZ:0U2KC1]U>3DN<S@=*E8G.,BKU>PG8*X-<CPM@F+T*Y0-MPJW5>C. .$>^KV(C#D&S1G9<;D6KQ#;;ZP=83K8AOV?;LG^O+%B<LX'@.R11-L+])C0T[QDQ0=W],O>NK6U+EG<VT(Q1E!%ARI2HPYF[HK976P,A5T]+H%-:6S;<4.%F0",
+			"transmitted": "TRUE",
+			"transmitted_devices": "8600,9026"
+		}, {
+			"saved_at": "2019-09-30T13:57:47Z",
+			"action": "transmitted",
+			"sender": "9026",
+			"recipient": "8032",
+			"created_at": "2019-09-30T13:57:46Z",
+			"body": "P'+YSO2T)-;%DUC970[CT4]M5]CS'XC.#=ROV[1!@&DY>TT!H)^5>[X:N22-6O/(>%$:6%[=IT[=I%RZ:0U2KC1]U>3DN<S@=*E8G.,BKU>PG8*X-<CPM@F+T*Y0-MPJW5>C. .$>^KV(C#D&S1G9<;D6KQ#;;ZP=83K8AOV?;LG^O+%B<LX'@.R11-L+])C0T[QDQ0=W],O>NK6U+EG<VT(Q1E!%ARI2HPYF[HK976P,A5T]+H%-:6S;<4.%F0",
+			"transmitted": "TRUE",
+			"transmitted_devices": "8600,9026"
+		}, {
+			"saved_at": "2019-09-30T13:57:47Z",
+			"action": "received",
+			"sender": "8600",
+			"recipient": "8001",
+			"created_at": "2019-09-30T13:57:47Z",
+			"body": "F?[:)R;=T/*.B&1A77<]CV':9JNAW0'6+A?]]]Q,'N-1/EHKGE.=LHW778.G?DS $P]!B)(AW6R'[;RB !MIV$ .2HMV;NZ+K[MU$/L:!S5<FW=GV*0M.1[@YI6471?,-W0<DJ=7Z]V7DMAU:O&5/^E35VR8#/3;S^Y+]S(T*MAKB[:H0IG/.ZD%L(L,;'9 *7S3+] LHBG*WKQ&ZKK7G'#SB+S+]30>0*ERQGH3MO-8:,P!3SUU^HQ*E$)VB%&",
+			"transmitted": "FALSE",
+			"transmitted_devices": "8600"
+		}],
+		"duration": "19.226000 ms"
+	}, {
+		"occured_at": "13:57:58",
+		"type": "connection",
+		"server": "8600",
+		"client": "1",
+		"messages": [],
+		"duration": "3.138000 ms"
+	}, {
+		"occured_at": "13:58:19",
+		"type": "connection",
+		"server": "9026",
+		"client": "1",
+		"messages": [{
+			"saved_at": "2019-09-30T13:58:19Z",
+			"action": "transmitted",
+			"sender": "8600",
+			"recipient": "8001",
+			"created_at": "2019-09-30T13:57:47Z",
+			"body": "F?[:)R;=T/*.B&1A77<]CV':9JNAW0'6+A?]]]Q,'N-1/EHKGE.=LHW778.G?DS $P]!B)(AW6R'[;RB !MIV$ .2HMV;NZ+K[MU$/L:!S5<FW=GV*0M.1[@YI6471?,-W0<DJ=7Z]V7DMAU:O&5/^E35VR8#/3;S^Y+]S(T*MAKB[:H0IG/.ZD%L(L,;'9 *7S3+] LHBG*WKQ&ZKK7G'#SB+S+]30>0*ERQGH3MO-8:,P!3SUU^HQ*E$)VB%&",
+			"transmitted": "TRUE",
+			"transmitted_devices": "8600,9026"
+		}],
+		"duration": "4.287000 ms"
+	}, {
+		"occured_at": "13:58:27",
+		"type": "connection",
+		"server": "1",
+		"client": "9026",
+		"messages": [],
+		"duration": "4.190000 ms"
+	}, {
+		"occured_at": "13:58:27",
+		"type": "connection",
+		"server": "1",
+		"client": "8600",
+		"messages": [],
+		"duration": "3.500000 ms"
+	}, {
+		"occured_at": "13:58:38",
+		"type": "connection",
+		"server": "8600",
+		"client": "1",
+		"messages": [],
+		"duration": "2.123000 ms"
+	}, {
+		"occured_at": "13:58:59",
+		"type": "connection",
+		"server": "9026",
+		"client": "1",
+		"messages": [],
+		"duration": "2.259000 ms"
+	}, {
+		"occured_at": "13:59:07",
+		"type": "connection",
+		"server": "1",
+		"client": "9026",
+		"messages": [],
+		"duration": "4.049000 ms"
+	}, {
+		"occured_at": "13:59:08",
+		"type": "connection",
+		"server": "1",
+		"client": "8600",
+		"messages": [],
+		"duration": "3.722000 ms"
+	}, {
+		"occured_at": "13:59:18",
+		"type": "connection",
+		"server": "8600",
+		"client": "1",
+		"messages": [],
+		"duration": "7.327000 ms"
+	}, {
+		"occured_at": "13:59:39",
+		"type": "connection",
+		"server": "9026",
+		"client": "1",
+		"messages": [],
+		"duration": "5.607000 ms"
+	}, {
+		"occured_at": "13:59:46",
+		"type": "production",
+		"server": "0",
+		"client": "0",
+		"messages": [{
+			"saved_at": "2019-09-30T13:59:46Z",
+			"action": "produced",
+			"sender": "1",
+			"recipient": "1",
+			"created_at": "2019-09-30T13:59:46Z",
+			"body": "F2IER3$RSG# X8X[.$3!Q?V>L$ZJ1J0C3U5FY(:A+:9D34R7GS('I*E5/@ @*0$>&9$A>@MYZ1,.#CVWK]@VBV%VE-&IK,#O,D.L1'FB3UFVK=AH]7*S<-I:PK%NT(3UD);'<0M2[*TC'+N[H[DJ545:1$.971.[:JWZO)VY]9!)'Q@;7UPQ&T ?+1N'K8)B2YL(RIBSRIOCL0^#%OU+CUJO&8VQP4#X +KIM><7.#>^&CM[N0P8VQUHAUDMP8E",
+			"transmitted": "FALSE",
+			"transmitted_devices": "8600,9026"
+		}],
+		"duration": "0.098000 ms"
+	}, {
+		"occured_at": "13:59:48",
+		"type": "connection",
+		"server": "1",
+		"client": "9026",
+		"messages": [{
+			"saved_at": "2019-09-30T13:59:48Z",
+			"action": "transmitted",
+			"sender": "1",
+			"recipient": "1",
+			"created_at": "2019-09-30T13:59:46Z",
+			"body": "F2IER3$RSG# X8X[.$3!Q?V>L$ZJ1J0C3U5FY(:A+:9D34R7GS('I*E5/@ @*0$>&9$A>@MYZ1,.#CVWK]@VBV%VE-&IK,#O,D.L1'FB3UFVK=AH]7*S<-I:PK%NT(3UD);'<0M2[*TC'+N[H[DJ545:1$.971.[:JWZO)VY]9!)'Q@;7UPQ&T ?+1N'K8)B2YL(RIBSRIOCL0^#%OU+CUJO&8VQP4#X +KIM><7.#>^&CM[N0P8VQUHAUDMP8E",
+			"transmitted": "TRUE",
+			"transmitted_devices": "9026"
+		}, {
+			"saved_at": "2019-09-30T13:59:48Z",
+			"action": "received",
+			"sender": "9026",
+			"recipient": "1",
+			"created_at": "2019-09-30T13:59:46Z",
+			"body": "F2IER3$RSG# X8X[.$3!Q?V>L$ZJ1J0C3U5FY(:A+:9D34R7GS('I*E5/@ @*0$>&9$A>@MYZ1,.#CVWK]@VBV%VE-&IK,#O,D.L1'FB3UFVK=AH]7*S<-I:PK%NT(3UD);'<0M2[*TC'+N[H[DJ545:1$.971.[:JWZO)VY]9!)'Q@;7UPQ&T ?+1N'K8)B2YL(RIBSRIOCL0^#%OU+CUJO&8VQP4#X +KIM><7.#>^&CM[N0P8VQUHAUDMP8E",
+			"transmitted": "FALSE",
+			"transmitted_devices": "9026"
+		}],
+		"duration": "12.048000 ms"
+	}, {
+		"occured_at": "13:59:49",
+		"type": "connection",
+		"server": "1",
+		"client": "8600",
+		"messages": [{
+			"saved_at": "2019-09-30T13:59:49Z",
+			"action": "transmitted",
+			"sender": "1",
+			"recipient": "1",
+			"created_at": "2019-09-30T13:59:46Z",
+			"body": "F2IER3$RSG# X8X[.$3!Q?V>L$ZJ1J0C3U5FY(:A+:9D34R7GS('I*E5/@ @*0$>&9$A>@MYZ1,.#CVWK]@VBV%VE-&IK,#O,D.L1'FB3UFVK=AH]7*S<-I:PK%NT(3UD);'<0M2[*TC'+N[H[DJ545:1$.971.[:JWZO)VY]9!)'Q@;7UPQ&T ?+1N'K8)B2YL(RIBSRIOCL0^#%OU+CUJO&8VQP4#X +KIM><7.#>^&CM[N0P8VQUHAUDMP8E",
+			"transmitted": "TRUE",
+			"transmitted_devices": "8600,9026"
+		}, {
+			"saved_at": "2019-09-30T13:59:49Z",
+			"action": "transmitted",
+			"sender": "9026",
+			"recipient": "1",
+			"created_at": "2019-09-30T13:59:46Z",
+			"body": "F2IER3$RSG# X8X[.$3!Q?V>L$ZJ1J0C3U5FY(:A+:9D34R7GS('I*E5/@ @*0$>&9$A>@MYZ1,.#CVWK]@VBV%VE-&IK,#O,D.L1'FB3UFVK=AH]7*S<-I:PK%NT(3UD);'<0M2[*TC'+N[H[DJ545:1$.971.[:JWZO)VY]9!)'Q@;7UPQ&T ?+1N'K8)B2YL(RIBSRIOCL0^#%OU+CUJO&8VQP4#X +KIM><7.#>^&CM[N0P8VQUHAUDMP8E",
+			"transmitted": "TRUE",
+			"transmitted_devices": "8600,9026"
+		}],
+		"duration": "14.268000 ms"
+	}, {
+		"occured_at": "13:59:58",
+		"type": "connection",
+		"server": "8600",
+		"client": "1",
+		"messages": [],
+		"duration": "2.319000 ms"
+	}, {
+		"occured_at": "14:00:19",
+		"type": "connection",
+		"server": "9026",
+		"client": "1",
+		"messages": [],
+		"duration": "1.975000 ms"
+	}, {
+		"occured_at": "14:00:28",
+		"type": "connection",
+		"server": "1",
+		"client": "9026",
+		"messages": [],
+		"duration": "5.533000 ms"
+	}, {
+		"occured_at": "14:00:29",
+		"type": "connection",
+		"server": "1",
+		"client": "8600",
+		"messages": [],
+		"duration": "5.705000 ms"
+	}, {
+		"occured_at": "14:00:38",
+		"type": "connection",
+		"server": "8600",
+		"client": "1",
+		"messages": [],
+		"duration": "1.828000 ms"
+	}, {
+		"occured_at": "14:00:59",
+		"type": "connection",
+		"server": "9026",
+		"client": "1",
+		"messages": [],
+		"duration": "1.969000 ms"
+	}, {
+		"occured_at": "14:01:09",
+		"type": "connection",
+		"server": "1",
+		"client": "9026",
+		"messages": [{
+			"saved_at": "2019-09-30T14:01:09Z",
+			"action": "received",
+			"sender": "8600",
+			"recipient": "8869",
+			"created_at": "2019-09-30T14:00:47Z",
+			"body": "# 4;(]+?QCN[4D;>STD*9AFX+;BM**P*>,3;7R-ZA(/%CMX8M<B&^)^)D@WOJGY(S,D+Q%@Y4E<=TOY7UW@S!$4XS^?M'3YK>X<C85X]QZ:FI4]>+=1,AE$5DDKW[65TRX,'P*XJD>3X;Q$X#0:H5O,YQWPL-%@]M&NW8;=L4Y=8Q@H+)]Z5VK-F8:KX:IE@7<?OX];,VYDG9,SB*MX 9%GQ?2IY[/:2KYCV=OL634P@'2JT*J-/1^ODHH?WRBT",
+			"transmitted": "FALSE",
+			"transmitted_devices": "9026"
+		}],
+		"duration": "5.993000 ms"
+	}, {
+		"occured_at": "14:01:10",
+		"type": "connection",
+		"server": "1",
+		"client": "8600",
+		"messages": [{
+			"saved_at": "2019-09-30T14:01:10Z",
+			"action": "transmitted",
+			"sender": "8600",
+			"recipient": "8869",
+			"created_at": "2019-09-30T14:00:47Z",
+			"body": "# 4;(]+?QCN[4D;>STD*9AFX+;BM**P*>,3;7R-ZA(/%CMX8M<B&^)^)D@WOJGY(S,D+Q%@Y4E<=TOY7UW@S!$4XS^?M'3YK>X<C85X]QZ:FI4]>+=1,AE$5DDKW[65TRX,'P*XJD>3X;Q$X#0:H5O,YQWPL-%@]M&NW8;=L4Y=8Q@H+)]Z5VK-F8:KX:IE@7<?OX];,VYDG9,SB*MX 9%GQ?2IY[/:2KYCV=OL634P@'2JT*J-/1^ODHH?WRBT",
+			"transmitted": "TRUE",
+			"transmitted_devices": "8600,9026"
+		}],
+		"duration": "9.482000 ms"
+	}, {
+		"occured_at": "14:01:18",
+		"type": "connection",
+		"server": "8600",
+		"client": "1",
+		"messages": [],
+		"duration": "2.189000 ms"
+	}, {
+		"occured_at": "14:01:39",
+		"type": "connection",
+		"server": "9026",
+		"client": "1",
+		"messages": [],
+		"duration": "2.168000 ms"
+	}, {
+		"occured_at": "14:01:49",
+		"type": "connection",
+		"server": "1",
+		"client": "9026",
+		"messages": [],
+		"duration": "6.051000 ms"
+	}, {
+		"occured_at": "14:01:50",
+		"type": "connection",
+		"server": "1",
+		"client": "8600",
+		"messages": [],
+		"duration": "3.460000 ms"
+	}, {
+		"occured_at": "14:01:58",
+		"type": "connection",
+		"server": "8600",
+		"client": "1",
+		"messages": [],
+		"duration": "2.003000 ms"
+	}, {
+		"occured_at": "14:02:19",
+		"type": "connection",
+		"server": "9026",
+		"client": "1",
+		"messages": [],
+		"duration": "4.917000 ms"
+	}, {
+		"occured_at": "14:02:30",
+		"type": "connection",
+		"server": "1",
+		"client": "9026",
+		"messages": [],
+		"duration": "2.907000 ms"
+	}, {
+		"occured_at": "14:02:31",
+		"type": "connection",
+		"server": "1",
+		"client": "8600",
+		"messages": [],
+		"duration": "5.700000 ms"
+	}, {
+		"occured_at": "14:02:37",
+		"type": "connection",
+		"server": "8600",
+		"client": "1",
+		"messages": [],
+		"duration": "1.990000 ms"
+	}],
+	"duration": "300.001144 s",
+	"end": "2019-09-30T14:02:46Z",
+	"stats": {
+		"produced": "100",
+		"received": "200",
+		"transmitted": "130",
+		"producedDelayAvg": "56.47s",
+		"devices": [
+		  {
+			"aem": "8600",
+			"connections": [
+			  {
+				"start": "{timestamp11}",
+				"end": "{timestamp11e}",
+				"duration": "200.89ms"
+			  },
+			  {
+				"start": "{timestamp12}",
+				"end": "{timestamp12e}",
+				"duration": "205ms"
+			  }
+			]
+		  },
+		  {
+			"aem": "9026",
+			"connections": [
+			  {
+				"start": "{timestamp21}",
+				"end": "{timestamp21e}",
+				"duration": "105.11ms"
+			  },
+			  {
+				"start": "{timestamp22}",
+				"end": "{timestamp22e}",
+				"duration": "15.04ms"
+			  }
+			]
+		  }
+		]
+	}
+
+}

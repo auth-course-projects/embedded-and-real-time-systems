@@ -1,7 +1,7 @@
 <div class="timeline">
   <div class="timeline-month">
     Start: <b>{{start}}</b>
-    <span>AEM: <b>9026</b> | Duration: <b>{{duration}}</b></span>
+    <span>AEM: <b>{{#pad_zeros}}{{client_aem}}{{/pad_zeros}}</b> | Duration: <b>{{duration}}</b></span>
   </div>
 
   {{#each events}}
