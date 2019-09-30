@@ -258,6 +258,9 @@ function getDatetimeMessageFormInputs( message ) {
 }
 
 function getProductionMessageFormInputs( message ) {
+  message.sender = message.sender.toString().padStart(4, '0');
+  message.recipient = message.recipient.toString().padStart(4, '0');
+  
   return `
     <div class="form-group">
       <label class="col-md-2 control-label">Sender</label>
@@ -288,19 +291,3 @@ function getProductionMessageFormInputs( message ) {
     </div>
   `;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log();

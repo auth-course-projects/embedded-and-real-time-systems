@@ -12,8 +12,8 @@
       <a class="btn btn-xs btn-default pull-right" onclick="renderMessageDetails(this)">Details</a>
 
       {{#if (ne action 'datetime')}}
-        <div class="box-item"><strong>Sender</strong>: {{sender}}</div>
-        <div class="box-item"><strong>Recipient</strong>: {{recipient}}</div>
+        <div class="box-item"><strong>Sender</strong>: {{#pad_zeros}}{{sender}}{{/pad_zeros}}</div>
+        <div class="box-item"><strong>Recipient</strong>: {{#pad_zeros}}{{recipient}}{{/pad_zeros}}</div>
         <div class="box-item"><strong>Created Date</strong>: {{created_at}}</div>
         <div class="box-item"><strong>Body</strong>:  {{#trim_body}}{{body}}{{/trim_body}}</div>
       {{else}}
