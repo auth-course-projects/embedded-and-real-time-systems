@@ -95,11 +95,17 @@ const renderSession = function()
   // Handlebars helper to trim message body
   Handlebars.registerHelper( 'trim_body', function( options ) {
     let body = options.fn( this );
-    let maxLength = 35;
+    let maxLength = 30;
 
     return body.length > maxLength ?
       body.substr( 0, maxLength - 4 ) + ' [&hellip;]':
       body;
+  });
+
+  // Handlebars helper to trim message body
+  Handlebars.registerHelper( 'pad_zeros', function( options ) {
+    let aem = options.fn( this );
+    return aem.toString().padStart(4, '0');
   });
 
   // Handlebars helper to augment {{#if}} helper

@@ -3,7 +3,7 @@
     <i class="fa fa-clock-o"></i>&nbsp; {{occured_at}}
     {{#if (ne type 'production')}}
     <span class="fix">
-      <b>{{server}}</b> (server) <i class="fa fa-arrows-h"></i> <b>{{client}}</b> (client)
+      <b>{{#pad_zeros}}{{server}}{{/pad_zeros}}</b> (server) <i class="fa fa-arrows-h"></i> <b>{{#pad_zeros}}{{client}}{{/pad_zeros}}</b> (client)
     </span>
     {{/if}}
     <span>type: <b>{{type}}</b></span>
