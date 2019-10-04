@@ -54,7 +54,7 @@
             <thead>
               <tr>
                 <th width="10%">&nbsp;</th>
-                <th width="30%">Devices</th>
+                <th width="30%">Devices Participated</th>
                 <th width="30%">Started At</th>
                 <th width="30%">Timelines</th>
               </tr>
@@ -76,7 +76,7 @@
             <thead>
               <tr>
                 <th width="10%">&nbsp;</th>
-                <th width="30%">Devices</th>
+                <th width="30%">Devices Participated</th>
                 <th width="30%">Started At</th>
                 <th width="30%">Stats</th>
               </tr>
@@ -96,9 +96,65 @@
 
     <script type="text/javascript">
 
+      const myAEM = '9026';
+      const xhr = new XMLHttpRequest();
       const maxNumberOfSessions = 10;
-      const deviceAEMs = [1, 8600, 9026];
 
+      const getSession = function( sessionIndex ) {
+
+        xhr.open( 'HEAD', `./Sessions/${myAEM}/session${sessionIndex}.json`, false );
+        xhr.send( null );
+
+        // Check if session with $sessionIndex for $deviceAEM exists
+        if ( xhr.status !== 200 ) {
+          return {
+            exists: false
+          };
+        }
+
+        // Get file
+        xhr.open( 'GET', `./Sessions/${myAEM}/session${sessionIndex}.json`, false );
+        xhr.send( null );
+
+        // Get json data
+        let session = JSON.parse( xhr.responseText );
+        let sessionDevices = session.stats.devices.map(
+          device => device.aem.toString().padStart(4, '0')
+        );
+
+        // Prepend in devices my device
+        sessionDevices.unshift( myAEM );
+
+        let sessionLinks = {timeline: [], stats: []};
+        sessionDevices.forEach( device => {
+
+          xhr.open( 'HEAD', `./Sessions/${device}/session${sessionIndex}.json`, false );
+          xhr.send( null );
+
+          // Check if session with $sessionIndex for $deviceAEM exists
+          if ( xhr.status === 200 ) {
+            deviceBold = device === myAEM ? `<b>${device}</b>` : device;
+            sessionLinks.timeline.push( `<a href="./timeline/?session=${sessionIndex}&device=${device}">${deviceBold} <i class="fa fa-chevron-right"></i></a>` );
+            sessionLinks.stats.push( `<a href="./stats/?session=${sessionIndex}&device=${device}">${deviceBold} <i class="fa fa-chevron-right"></i></a>` );
+          }
+
+        });
+
+        // Highlight $myAEM
+        sessionDevices[0] = `<b>${sessionDevices[0]}</b>`;
+
+        return {
+          exists: true,
+          data: {
+            devices: sessionDevices,
+            start: session.start
+          },
+          links: sessionLinks
+        };
+
+      }
+
+      /*
       const sessionExists = function( sessionIndex, deviceAEM ) {
 
         const xhr = new XMLHttpRequest();
@@ -163,6 +219,7 @@
         };
 
       }
+      */
 
       const tbody1Element = document.getElementById( 'tbody1' );
       const tbody2Element = document.getElementById( 'tbody2' );
@@ -170,27 +227,30 @@
       let sessionIndex = 1;
       do {
 
-        // Append element to table
-        let tr1 = document.createElement( 'tr' );
-        let tr2 = document.createElement( 'tr' );
-        let session = getSessionLinks( sessionIndex );
+        // Get session data
+        let session = getSession( sessionIndex );
 
-        if ( null === session ) {
+        // Check if session exists
+        if ( false === session.exists ) {
           break;
         }
 
+        // Append rows to tables
+        let tr1 = document.createElement( 'tr' );
+        let tr2 = document.createElement( 'tr' );
+
         tr1.innerHTML = `
           <th>Session ${sessionIndex}</th>
-          <td>${session.aems.join(',')}</td>
-          <td>${session.start}</td>
-          <td>${session.timelineLinks}</td>
+          <td>${session.data.devices.join(', ')}</td>
+          <td>${session.data.start}</td>
+          <td>${session.links.timeline.join(', ')}</td>
         `;
 
         tr2.innerHTML = `
           <th>Session ${sessionIndex}</th>
-          <td>${session.aems.join(',')}</td>
-          <td>${session.start}</td>
-          <td>${session.statsLinks}</td>
+          <td>${session.data.devices.join(', ')}</td>
+          <td>${session.data.start}</td>
+          <td>${session.links.stats.join(', ')}</td>
         `;
 
         tbody1Element.appendChild( tr1 );
