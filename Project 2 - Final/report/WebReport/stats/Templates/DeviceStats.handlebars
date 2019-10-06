@@ -22,6 +22,11 @@
         </tr>
         {{/each}}
       </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Average Duration with {{#pad_zeros}}{{aem}}{{/pad_zeros}}: <b>{{average_duration}}</b></td>
+        </tr>
+      </tfoot>
     </table>
   </div>
 {{/each}}
