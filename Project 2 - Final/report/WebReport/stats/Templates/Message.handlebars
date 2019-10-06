@@ -1,0 +1,15 @@
+<div data-template="message" data-index="{{@index}}" class="col-sm-4 mb-sm">
+  <div class="timeline-box">
+    <div class="box-title text-capitalize">
+      Message #{{@index}}
+    </div>
+    <div class="box-content">
+      <!-- <a class="btn btn-xs btn-default pull-right" onclick="renderMessageDetails(this)">Details</a> -->
+      <div class="box-item"><strong>Sender</strong>: {{#pad_zeros}}{{sender}}{{/pad_zeros}}</div>
+      <div class="box-item"><strong>Recipient</strong>: {{#pad_zeros}}{{recipient}}{{/pad_zeros}}</div>
+      <div class="box-item"><strong>Created Date</strong>: {{created_at}}</div>
+      <div class="box-item"><strong>Body</strong>:  {{#trim_body}}{{body}}{{/trim_body}}</div>
+    </div>
+    <div class="box-footer"></div>
+  </div>
+</div>

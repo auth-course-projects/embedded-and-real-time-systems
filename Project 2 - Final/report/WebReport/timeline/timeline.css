@@ -189,3 +189,11 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.3);
   background-color: #191919;
   color: #afafaf;
 }
+
+.messages-length-0 {
+  display: none;
+}
+
+body.show-all-events .messages-length-0 {
+  display: block;
+}

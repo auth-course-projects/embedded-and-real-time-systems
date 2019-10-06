@@ -17,6 +17,9 @@
     <script src="../vendor/bootbox.js/5.3.2/bootbox.min.js"></script>
     <!-- Handlebars -->
     <script src="../vendor/handlebars/4.3.1/handlebars.js"></script>
+    <!-- Bootstrap Switch -->
+    <link rel="stylesheet" href="../vendor/switchery/switchery.min.css">
+    <script src="../vendor/switchery/switchery.min.js"></script>
     <!-- Timeline stylesheet & scripts -->
     <link rel="stylesheet" href="timeline.css">
     <script src="timeline.js"></script>
@@ -29,7 +32,7 @@
       }
     </style>
   </head>
-  <body style="overflow-x:hidden">
+  <body class="show-all-events" style="overflow-x:hidden">
     <div class="row">
       <h2 class="text-center">Timeline for Session #<span class="sessionIndex"></span></h2>
       <nav aria-label="breadcrumb">
@@ -40,6 +43,33 @@
         </ol>
       </nav>
     </div>
+
+    <div class="container">
+      <div class="form-group">
+        <input id="checkbox" type="checkbox" name="" checked="checked" class="js-switch" style="cursor:pointer" />
+        <label for="checkbox" style="cursor:pointer"><b>Show Events with no messages</b></label>
+       </div>
+    </div>
+
     <div id="renderSession" class="container"></div>
   </body>
+
+  <script type="text/javascript">
+
+    (function() {
+
+      let switchElement = document.querySelector('.js-switch');
+      let init = new Switchery(switchElement, {
+        size: 'small',
+        color: '#74cae3'
+      });
+
+      switchElement.onchange = function() {
+        document.body.classList.toggle('show-all-events');
+      };
+
+    })();
+
+  </script>
+
 </html>

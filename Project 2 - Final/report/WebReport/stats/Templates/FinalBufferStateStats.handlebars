@@ -1,0 +1,7 @@
+<div class="row">
+  {{#each messages_buffer}}
+    {{#if (ne body '')}}
+      {{> Message}}
+    {{/if}}
+  {{/each}}
+</div>
