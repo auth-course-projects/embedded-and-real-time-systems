@@ -1,0 +1,7 @@
+<div class="row">
+  {{#each buffer_messages}}
+    {{#if (ne body '')}}
+      {{> BufferMessage}}
+    {{/if}}
+  {{/each}}
+</div>

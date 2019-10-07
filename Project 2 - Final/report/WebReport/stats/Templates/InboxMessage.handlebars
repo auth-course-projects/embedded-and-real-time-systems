@@ -1,0 +1,16 @@
+<div data-template="message" data-index="{{@index}}" class="col-sm-12 mb-sm">
+  <div class="timeline-box">
+    <div class="box-title text-capitalize">
+      Message #{{@index}}
+    </div>
+    <div class="box-content">
+      <div class="box-item"><strong>Sender</strong>: {{#pad_zeros}}{{sender}}{{/pad_zeros}}</div>
+      <div class="box-item"><strong>Created At</strong>: {{created_at}}</div>
+      <div class="box-item"><strong>Saved At</strong>: {{created_at}}</div>
+      <div class="box-item"><strong>Body</strong>:  &quot;{{body}}&quot;</div>
+      <hr>
+      <div class="box-item"><strong>First Sender</strong>: {{#pad_zeros}}{{first_sender}}{{/pad_zeros}}</div>
+    </div>
+    <div class="box-footer"></div>
+  </div>
+</div>

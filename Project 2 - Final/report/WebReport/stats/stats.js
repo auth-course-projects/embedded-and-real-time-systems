@@ -39,7 +39,11 @@ document.addEventListener( 'DOMContentLoaded', function(){
 	// Define app parameters
 	app = {
 	  paths: app_paths,
-	  template_names: ['MessageStats', 'DeviceStats', 'FinalBufferStateStats', 'Message'],
+	  template_names: [
+			'MessageStats', 'DeviceStats',
+			'Buffer', 'BufferMessage',
+			'Inbox', 'InboxMessage'
+		],
 	  templates: {},
 	  session: {}
 	}
@@ -157,7 +161,11 @@ document.addEventListener( 'DOMContentLoaded', function(){
 
 		// Render final buffer state
 	  const finalBufferStateElement = document.getElementById('finalBufferState');
-		finalBufferStateElement.innerHTML = app.templates.FinalBufferStateStats( app.session.stats );
+		finalBufferStateElement.innerHTML = app.templates.Buffer( app.session.stats );
+
+		// Render final buffer state
+	  const finaINBOXStateElement = document.getElementById('finalINBOXState');
+		finaINBOXStateElement.innerHTML = app.templates.Inbox( app.session.stats );
 	}
 
     // Load app
