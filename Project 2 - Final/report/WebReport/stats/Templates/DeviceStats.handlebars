@@ -1,5 +1,6 @@
 {{#each devices}}
   <div class="panel panel-default">
+    <a class="pull-right" style="padding:10px" href="#" onclick="$(this).parent().find('table tbody').toggle();return false">show/hide connections</a>
     <div class="panel-heading">
       <h3 class="panel-title">Device: <b>{{#pad_zeros}}{{aem}}{{/pad_zeros}}</b></h3>
     </div>
@@ -24,7 +25,7 @@
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="4">Average Duration with {{#pad_zeros}}{{aem}}{{/pad_zeros}}: <b>{{average_duration}}</b></td>
+          <td colspan="4">Average connection duration with {{#pad_zeros}}{{aem}}{{/pad_zeros}}: <b>{{average_duration}}</b></td>
         </tr>
       </tfoot>
     </table>
